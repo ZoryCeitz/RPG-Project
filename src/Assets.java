@@ -11,7 +11,7 @@ public class Assets {
     public static BufferedImage player, dirt, grass, stone;
 
     public static void init(){
-        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("C:\\Users\\IGMAdmin\\Downloads\\RPG-GAME-master\\RPG-GAME-master\\RPG-GAME-master\\BASIC RPG GAME\\res\\textures\\sheet.png"));
+        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("C:\\Users\\IGMAdmin\\Downloads\\RPG-Project-master\\RPG-Project-master\\res\\textures\\sheet.png"));
 
         player = sheet.crop(0, 0, width, height);
         dirt = sheet.crop(width, 0, width, height);

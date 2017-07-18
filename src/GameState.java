@@ -11,16 +11,17 @@ public class GameState extends State {
     private Player player;
     private World world;
 
-    public GameState(Game game){
-        super(game);
-        player = new Player(game, 100, 100);
-        world = new World("C:\\Users\\IGMAdmin\\Downloads\\RPG-GAME-master\\RPG-GAME-master\\RPG-GAME-master\\RPG-GAME-master\\RPG-GAME-master\\BASIC RPG GAME\\res\\Worlds\\world1.txt");
+    public GameState(Handler handler) {
+        super(handler);
+        world = new World(handler, "C:\\Users\\IGMAdmin\\Downloads\\RPG-Project-master\\RPG-Project-master\\res\\Worlds\\world1.txt");
+        handler.setWorld(world);
+        player = new Player(handler, 100, 100);
     }
-
     @Override
     public void tick() {
         world.tick();
         player.tick();
+
     }
 
     @Override
