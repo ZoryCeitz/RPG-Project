@@ -12,7 +12,7 @@ public class GameCamera {
         this.yOffset = yOffset;
     }
 
-    public void centerOnEntity(Entity e){
+    public void centerOnPlayer(Entity e){
         float lerp = 0.1f;
         xOffset += lerp * (e.getX() - game.getWidth() / 2 + e.getWidth() / 2 - xOffset);
         yOffset += lerp * (e.getY() - game.getHeight() / 2 + e.getHeight() / 2 - yOffset);
