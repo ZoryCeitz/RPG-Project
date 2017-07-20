@@ -13,14 +13,14 @@ public class Assets {
     public static BufferedImage[] player_up;
     public static BufferedImage[] player_right;
     public static BufferedImage[] player_left;
-    public static BufferedImage[] btn_start;
+  //  public static BufferedImage[] btn_start;
 
     public static void init(){
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("C:\\Users\\IGMAdmin\\Downloads\\RPG-Project-master\\RPG-Project-master\\res\\textures\\sheet.png"));
 
-        btn_start = new BufferedImage[2];
-        btn_start[0] = sheet.crop(64 * 12, 64 * 15, 64 * 5, 64);
-        btn_start[1] = sheet.crop(64 * 12, 64 * 16, 64 * 5, 64);
+       // btn_start = new BufferedImage[2];
+       // btn_start[0] = sheet.crop(64 * 5, 64 * 15, 64 * 12, 64);
+       // btn_start[1] = sheet.crop(64 * 5, 64 * 16, 64 * 12, 64);
 
         player_down = new BufferedImage[6];
         player_up = new BufferedImage[6];
