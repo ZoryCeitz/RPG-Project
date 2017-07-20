@@ -8,14 +8,19 @@ public class Assets {
 
     private static final int width = 64, height = 64;
 
-    public static BufferedImage dirt, grass, stone;
+    public static BufferedImage dirt, grass, stone, tree;
     public static BufferedImage[] player_down;
     public static BufferedImage[] player_up;
     public static BufferedImage[] player_right;
     public static BufferedImage[] player_left;
+    public static BufferedImage[] btn_start;
 
     public static void init(){
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("C:\\Users\\IGMAdmin\\Downloads\\RPG-Project-master\\RPG-Project-master\\res\\textures\\sheet.png"));
+
+        btn_start = new BufferedImage[2];
+        btn_start[0] = sheet.crop(64 * 12, 64 * 15, 64 * 5, 64);
+        btn_start[1] = sheet.crop(64 * 12, 64 * 16, 64 * 5, 64);
 
         player_down = new BufferedImage[6];
         player_up = new BufferedImage[6];
@@ -50,6 +55,7 @@ public class Assets {
         dirt = sheet.crop(0, 128, width, height);
         grass = sheet.crop(width, 128, width, height);
         stone = sheet.crop(width * 2, 128, width, height);
+        tree = sheet.crop(width * 3, height * 2, width, height * 2);
     }
 }
 

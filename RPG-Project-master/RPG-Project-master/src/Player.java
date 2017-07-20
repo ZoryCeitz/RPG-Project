@@ -18,9 +18,9 @@ public class Player extends Creature {
         super(handler, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
 
         bounds.x = 16;
-        bounds.y = 4;
+        bounds.y = 22;
         bounds.width = 32;
-        bounds.height = 56;
+        bounds.height = 37;
 
         //Animations
         animDown = new Animation(130,Assets.player_down);
@@ -61,8 +61,8 @@ public class Player extends Creature {
     g.drawImage(getCurrentAnimationFrame(), (int) (x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()), width, height, null);
     //g.setColor(Color.red);
    // g.fillRect((int) (x + bounds.x - handler.getGameCamera().getxOffset()),
-     //       (int) (y + bounds.y - handler.getGameCamera().getyOffset()),
-        //    bounds.width, bounds.height);
+    //       (int) (y + bounds.y - handler.getGameCamera().getyOffset()),
+      //      bounds.width, bounds.height);
 }
 
     private BufferedImage getCurrentAnimationFrame(){
