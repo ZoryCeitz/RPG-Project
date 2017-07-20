@@ -7,6 +7,7 @@ public class MenuState extends State {
     }
 
     public void tick(){
+        System.out.println(handler.getMouseManager().getMouseX() + "  " + handler.getMouseManager().getMouseY());
 
     }
 
