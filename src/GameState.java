@@ -12,7 +12,7 @@ public class GameState extends State {
 
     public GameState(Handler handler) {
         super(handler);
-        world = new World(handler, "C:\\Users\\Prime\\Downloads\\RPG-Project-master\\RPG-Project-master\\res\\Worlds\\world1.txt");
+        world = new World(handler, "C:\\Users\\IGMAdmin\\Downloads\\RPG-Project-master\\RPG-Project-master\\res\\Worlds\\world1.txt");
         handler.setWorld(world);
     }
     @Override
